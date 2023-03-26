@@ -1,6 +1,5 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -35,12 +34,14 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about,.education, .services, .skills, .teams, .projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
+.education .serv-content,
 .services .serv-content,
 .skills .skills-content,
+.projects .serv-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -219,9 +220,49 @@ section .title::after{
     color: crimson;
     background: none;
 }
-
+/* education section styling */
+.education{
+    color: #fff;
+    background: #111;
+}
+.education .title .underline{
+    color: #fff;
+}
+.education .serv-content .card{
+    width: calc(33% - 20px);
+    display: inline-block;
+    background: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.education .serv-content .card:hover{
+    background: #111;
+}
+.education .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.education .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.education .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.education .serv-content .card:hover .box text{
+    color: #fff;
+}
+.education .serv-content .card .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: crimson;
+}
 /* services section styling */
-.services, .teams, .projects{
+ .teams{
     color:#fff;
     background: #111;
 }
@@ -256,6 +297,7 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: #fff;
 }
 
 /* skills section styling */
@@ -350,7 +392,7 @@ section .title::after{
 .teams .serv-content .card{
     width: calc(33% - 20px);
     display: inline-block;
-    background: #222;
+    background: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -358,7 +400,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .serv-content .card:hover{
-    background: crimson;
+    background: #111;
 }
 .teams .serv-content .card .box{
     transition: all 0.3s ease;
@@ -378,8 +420,13 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: crimson;
 }
 /* projects section styling */
+.projects{
+    color: #111;
+    background: #fff;
+}
 .projects .serv-content .card{
     width: calc(33% - 20px);
     display: inline-block;
@@ -412,7 +459,9 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
+.projects .serv-content .card .text a{
+    color: #fff;
+}
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
