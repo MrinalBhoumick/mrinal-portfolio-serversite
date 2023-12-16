@@ -18,19 +18,15 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-<<<<<<< HEAD
 .about,.experience, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content,
-.experience .serv-content,
-=======
-.about,.education, .services, .skills, .teams, .projects, .contact, footer{
+.about .about-content,.experience .serv-content,.about,.education, .services, .skills, .teams, .projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .education .serv-content,
->>>>>>> bc25afcc00f313c825e8add2579ed926b47cba4c
+.experience .serv-content,
 .services .serv-content,
 .skills .skills-content,
 .projects .serv-content,
@@ -212,7 +208,6 @@ section .title::after{
     color: crimson;
     background: none;
 }
-<<<<<<< HEAD
 .experience{
     color: #111;
     background: #fff;
@@ -226,7 +221,7 @@ section .title::after{
 }
 .experience .serv-content .card{
     width: calc(33% - 20px);
-=======
+}
 /* education section styling */
 .education{
     color: #fff;
@@ -238,7 +233,6 @@ section .title::after{
 .education .serv-content .card{
     width: calc(33% - 20px);
     display: inline-block;
->>>>>>> bc25afcc00f313c825e8add2579ed926b47cba4c
     background: #fff;
     text-align: center;
     border-radius: 6px;
@@ -246,7 +240,6 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-<<<<<<< HEAD
 .experience .serv-content .card:hover{
     background: crimson;
 }
@@ -259,7 +252,6 @@ section .title::after{
 .experience .serv-content .card:hover .box .text{
     color: #fff;
 }
-
 .experience .serv-content .card .box{
     transition: all 0.3s ease;
 }
@@ -267,7 +259,8 @@ section .title::after{
     transform: scale(1.05);
 }
 .experience .serv-content .card img{
-=======
+    color: cornflowerblue;
+}
 .education .serv-content .card:hover{
     background: #111;
 }
@@ -278,17 +271,15 @@ section .title::after{
     transform: scale(1.05);
 }
 .education .serv-content .card i{
->>>>>>> bc25afcc00f313c825e8add2579ed926b47cba4c
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-<<<<<<< HEAD
 .experience .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-=======
+}
 .education .serv-content .card:hover .box text{
     color: #fff;
 }
@@ -297,7 +288,6 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
     color: crimson;
->>>>>>> bc25afcc00f313c825e8add2579ed926b47cba4c
 }
 /* services section styling */
  .teams{
@@ -405,9 +395,9 @@ section .title::after{
 .skills-content .right .dsa::before{
     width: 80%;
 }
-<<<<<<< HEAD
 .skills-content .right .ml::before{
-=======
+    width: 50%;
+}
 .skills-content .right .reactjs::before{
     width: 75%;
 }
@@ -415,7 +405,6 @@ section .title::after{
     width: 60%;
 }
 .skills-content .right .php::before{
->>>>>>> bc25afcc00f313c825e8add2579ed926b47cba4c
     width: 50%;
 }
 .skills-content .right .dbms::before{
@@ -838,8 +827,7 @@ footer span a:hover{
     .contact .right form .fields{
         flex-direction: column;
     }
-    .contact .right form .name,
-    .contact .right form .email{
+    .contact .right form .name,.contact .right form .email{
         margin: 0;
     }
     .right form .error-box{
