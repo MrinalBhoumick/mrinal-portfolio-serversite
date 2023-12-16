@@ -9,7 +9,6 @@
 html{
     scroll-behavior: smooth;
 }
-/* all similar content styling codes */
 section{
     padding: 100px 0;
 }
@@ -222,6 +221,47 @@ section .title::after{
 .experience .serv-content .card{
     width: calc(33% - 20px);
 }
+/*teams section styling */
+.teams{
+    color: #fff;
+    background: #111;
+}
+.teams .title .underline{
+    color: #fff;
+}
+.teams .serv-content .card{
+    width: calc(33% - 20px);
+    display: inline-block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.teams .serv-content .card:hover{
+    background: #111;
+}
+.teams .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.teams .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.teams .serv-content .card:hover i{
+    color: #fff;
+}
+.teams .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: crimson;
+}
 /* education section styling */
 .education{
     color: #fff;
@@ -290,10 +330,6 @@ section .title::after{
     color: crimson;
 }
 /* services section styling */
- .teams{
-    color:#fff;
-    background: #111;
-}
 .services .serv-content .card{
     width: calc(33% - 20px);
     display: inline-block;
@@ -422,40 +458,6 @@ section .title::after{
 .skills-content .right .Operating::before{
     width: 70%;
 } 
-/* teams section styling */
-.teams .serv-content .card{
-    width: calc(33% - 20px);
-    display: inline-block;
-    background: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.teams .serv-content .card:hover{
-    background: #111;
-}
-.teams .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-.teams .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.teams .serv-content .card i{
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-.teams .serv-content .card:hover i{
-    color: #fff;
-}
-.teams .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-    color: crimson;
-}
 /* projects section styling */
 .projects{
     color: #111;
